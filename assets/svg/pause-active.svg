@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <title>pause</title>
+ <g class="layer">
+  <title>Layer 1</title>
+  <path d="m31.999998,0c-17.673,0 -32,14.327 -32,32s14.327,32 32,32s32,-14.327 32,-32s-14.327,-32 -32,-32zm0,58c-14.359,0 -26,-11.641 -26,-26s11.641,-26 26,-26s26,11.641 26,26s-11.641,26 -26,26zm-12,-38l8,0l0,24l-8,0l0,-24zm16,0l8,0l0,24l-8,0l0,-24z" fill="#c5b358" id="svg_1"/>
+ </g>
+</svg>

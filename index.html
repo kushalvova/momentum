@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+        <div class="volume-slider">
+          <div class="volume-percentage"></div>
+        </div>
+        <div class="volume-button">
+          <svg class="mute-btn" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M832 352v1088q0 26-19 45t-45 19-45-19l-333-333h-262q-26 0-45-19t-19-45v-384q0-26 19-45t45-19h262l333-333q19-19 45-19t45 19 19 45zm384 544q0 76-42.5 141.5t-112.5 93.5q-10 5-25 5-26 0-45-18.5t-19-45.5q0-21 12-35.5t29-25 34-23 29-36 12-56.5-12-56.5-29-36-34-23-29-25-12-35.5q0-27 19-45.5t45-18.5q15 0 25 5 70 27 112.5 93t42.5 142zm256 0q0 153-85 282.5t-225 188.5q-13 5-25 5-27 0-46-19t-19-45q0-39 39-59 56-29 76-44 74-54 115.5-135.5t41.5-173.5-41.5-173.5-115.5-135.5q-20-15-76-44-39-20-39-59 0-26 19-45t45-19q13 0 26 5 140 59 225 188.5t85 282.5zm256 0q0 230-127 422.5t-338 283.5q-13 5-26 5-26 0-45-19t-19-45q0-36 39-59 7-4 22.5-10.5t22.5-10.5q46-25 82-51 123-91 192-227t69-289-69-289-192-227q-36-26-82-51-7-4-22.5-10.5t-22.5-10.5q-39-23-39-59 0-26 19-45t45-19q13 0 26 5 211 91 338 283.5t127 422.5z" fill="#fff"></path></svg>
+        </div>   
+      </div>
+      <div class="song-title"></div>
+      <div class="timeline-container">
+        <div class="audio-time">
+          <div class="current">0:00</div>
+          <div class="divider">/</div>
+          <div class="length">0:00</div>
+        </div>
+        <div class="timeline">
+          <div class="progress"></div>
+        </div>                  
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="gag"></div>
+    <div class="weather">
+      <input type="text" class="city">
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <div class="time"></div>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name">
+    </div>
+  </main>
+  <footer class="footer">    
+    <div class="footer-container">
+      <div class="footer-container-small">
+        <div class="footer-btn settings">
+          <div class="settings-list">
+            <ul>
+              <li>
+                <div class="settings-language"></div>
+                <p class="language-btn"></p>
+              </li>
+              <li>
+                <div class="settings-time"></div>
+                <div class="switch settings-time-btn">
+                  <div class="checkbox">
+                    <div class="slider"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="settings-date"></div>
+                <div class="switch settings-date-btn">
+                  <div class="checkbox">
+                    <div class="slider"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="settings-greeting"></div>
+                <div class="switch settings-greeting-btn">
+                  <div class="checkbox">
+                    <div class="slider"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="settings-quote"></div>
+                <div class="switch settings-quote-btn">
+                  <div class="checkbox">
+                    <div class="slider"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="settings-weather"></div>
+                <div class="switch settings-weather-btn">
+                  <div class="checkbox">
+                    <div class="slider"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="settings-audio"></div>
+                <div class="switch settings-audio-btn">
+                  <div class="checkbox">
+                    <div class="slider"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="settings-todo"></div>
+                <div class="switch settings-todo-btn">
+                  <div class="checkbox">
+                    <div class="slider"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <svg class="settings-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340.274 340.274"><path d="M293.629 127.806l-5.795-13.739c19.846-44.856 18.53-46.189 14.676-50.08l-25.353-24.77-2.516-2.12h-2.937c-1.549 0-6.173 0-44.712 17.48l-14.184-5.719c-18.332-45.444-20.212-45.444-25.58-45.444h-35.765c-5.362 0-7.446-.006-24.448 45.606l-14.123 5.734C86.848 43.757 71.574 38.19 67.452 38.19l-3.381.105-27.27 26.737c-4.138 3.891-5.582 5.263 15.402 49.425l-5.774 13.691C0 146.097 0 147.838 0 153.33v35.068c0 5.501 0 7.44 46.585 24.127l5.773 13.667c-19.843 44.832-18.51 46.178-14.655 50.032l25.353 24.8 2.522 2.168h2.951c1.525 0 6.092 0 44.685-17.516l14.159 5.758c18.335 45.438 20.218 45.427 25.598 45.427h35.771c5.47 0 7.41 0 24.463-45.589l14.195-5.74c26.014 11 41.253 16.585 45.349 16.585l3.404-.096 27.479-26.901c3.909-3.945 5.278-5.309-15.589-49.288l5.734-13.702c46.496-17.967 46.496-19.853 46.496-25.221V151.88c-.005-5.519-.005-7.446-46.644-24.074zM170.128 228.474c-32.798 0-59.504-26.187-59.504-58.364 0-32.153 26.707-58.315 59.504-58.315 32.78 0 59.43 26.168 59.43 58.315-.006 32.177-26.656 58.364-59.43 58.364z" fill="#FFF"></path></svg>
+        </div>
+      </div>
+      <div class="quote-container">
+        <button class="change-quote"></button>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+      <div class="footer-container-small">
+        <div class="footer-btn">
+          <div class="todo">
+            <input class="todo-input">  
+            <div class="todo-list"></div>        
+          </div>
+          <div class="todo-btn"></div>
+        </div>
+      </div>  
+    </div>
+  </footer>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
